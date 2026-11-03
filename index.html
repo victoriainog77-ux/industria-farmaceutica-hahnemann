@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industria Farmacéutica Hahnemann | GMP - DPW1 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🏭 INDUSTRIA FARMACÉUTICA HAHNEMANN S.R.L.</div>
+  <nav>
+    <a href="#inicio">Planta</a>
+    <a href="#catalogo">Vademécum</a>
+    <a href="#certificaciones">GMP</a>
+    <a href="#contacto">Pedidos B2B</a>
+    <button id="btn-carrito">📦 Pedido (<span id="contador">0</span>)</button>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <article>
+      <span class="badge">CERTIFICACIÓN GMP - AGEMED</span>
+      <h1>Industria Farmacéutica Hahnemann<br>Producción Homeopática y Alopática</h1>
+      <p>Planta industrial en Santa Cruz de la Sierra. Fabricación de lotes, maquila, distribución nacional. 30 años de calidad farmacéutica.</p>
+      <a href="#catalogo" class="btn-primary">Ver Vademécum Industrial</a>
+    </article>
+  </section>
+
+  <section id="certificaciones" class="stats">
+    <article><h3>150+</h3><p>Productos Registrados</p></article>
+    <article><h3>GMP</h3><p>Certificado AGEMED</p></article>
+    <article><h3>1000 kg</h3><p>Capacidad / lote</p></article>
+    <article><h3>9 Depts.</h3><p>Cobertura Nacional</p></article>
+  </section>
+
+  <section id="catalogo" class="seccion">
+    <h2>Vademécum Industrial - Catálogo Dinámico</h2>
+    <p class="sub">Renderizado con Array de Objetos JS + DOM - Cumple Requisito 3 DPW1 - Productos con lote industrial</p>
+    <div id="grid-productos" class="grid"></div>
+  </section>
+
+  <section id="contacto" class="seccion dark">
+    <h2>Pedidos Industriales B2B / Contacto Planta</h2>
+    <form id="form-contacto" novalidate>
+      <input type="text" id="nombre" placeholder="Empresa / Nombre responsable" required minlength="3">
+      <input type="email" id="email" placeholder="Email corporativo" required>
+      <input type="text" id="nit" placeholder="NIT Empresa (opcional)">
+      <textarea id="mensaje" placeholder="Detalle pedido: producto, cantidad por lote, presentación. Ej: 5000 unidades Arnica 30CH frasco 30ml..." required minlength="10"></textarea>
+      <span id="error-form" class="error"></span>
+      <button type="submit" class="btn-primary">Solicitar Cotización Industrial</button>
+    </form>
+  </section>
+</main>
+
+<aside id="carrito-panel" class="carrito">
+  <div class="carrito-header"><h3>Pedido Industrial</h3><button id="cerrar-carrito">✖</button></div>
+  <div id="items-carrito"></div>
+  <div class="carrito-footer">
+    <p>Total estimado: Bs <span id="total">0.00</span></p>
+    <small>Precio por lote industrial - sin IVA</small>
+    <button id="vaciar" class="btn-sec">Vaciar</button>
+    <button id="comprar" class="btn-primary">Enviar Pedido a Planta</button>
+  </div>
+</aside>
+
+<footer>
+  <p>INDUSTRIA FARMACÉUTICA HAHNEMANN S.R.L. | Parque Industrial, Santa Cruz de la Sierra, BO | GMP - AGEMED - SENASAG</p>
+  <p>Trabajo Final DPW1 2026 | HTML5 Semántico + CSS3 Flexbox + JavaScript + GitHub + Netlify</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

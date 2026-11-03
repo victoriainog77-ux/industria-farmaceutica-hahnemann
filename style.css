@@ -1,0 +1,40 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f6f8fb;color:#111}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 4%;background:#082a4d;color:white;position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:10px}
+.logo{font-weight:800;font-size:1.1rem}
+nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+nav a{color:#9ec8ff;text-decoration:none;font-weight:700;font-size:.9rem}
+#btn-carrito{background:#00d4ff;border:none;padding:8px 14px;border-radius:8px;font-weight:800;cursor:pointer;color:#082a4d}
+.hero{display:flex;justify-content:center;align-items:center;min-height:60vh;background:linear-gradient(135deg,#082a4d 0%,#0a4d8a 100%);color:white;text-align:center;padding:50px 5%}
+.badge{background:#00d4ff;color:#082a4d;padding:6px 12px;border-radius:20px;font-weight:800;font-size:.75rem;display:inline-block;margin-bottom:15px}
+.hero h1{font-size:2.1rem;line-height:1.2;margin-bottom:12px}
+.hero p{max-width:700px;margin:0 auto 18px;color:#c2d9f0}
+.btn-primary{background:#00d4ff;color:#082a4d;padding:12px 22px;border:none;border-radius:10px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-sec{background:#e2e8f0;border:none;padding:10px;border-radius:8px;cursor:pointer;font-weight:600}
+.stats{display:flex;flex-wrap:wrap;justify-content:space-around;background:white;padding:25px 5%;border-bottom:1px solid #e2e8f0;text-align:center;gap:15px}
+.stats article h3{color:#082a4d;font-size:1.6rem}
+.stats article p{color:#64748b;font-size:.85rem;font-weight:700}
+.seccion{padding:45px 5%}
+.seccion.dark{background:#eef3f9}
+.sub{color:#64748b;margin-bottom:20px}
+.grid{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.card{background:white;border-radius:14px;padding:16px;width:280px;display:flex;flex-direction:column;box-shadow:0 5px 18px rgba(0,0,0,.07);border-left:5px solid #00d4ff}
+.card img{width:100%;height:150px;object-fit:cover;border-radius:10px;margin-bottom:10px;background:#eee}
+.card h3{font-size:1rem;color:#082a4d}
+.card .lote{font-size:.7rem;background:#e0f2ff;color:#082a4d;padding:3px 7px;border-radius:12px;display:inline-block;margin:5px 0;font-weight:700;width:fit-content}
+.card p{font-size:.82rem;color:#64748b;flex-grow:1;margin:6px 0}
+.precio{font-weight:800;margin:8px 0;color:#082a4d}
+.card button{background:#082a4d;color:white;border:none;padding:10px;border-radius:8px;cursor:pointer;font-weight:700}
+form{max-width:520px;display:flex;flex-direction:column;gap:12px;background:white;padding:22px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+input,textarea{padding:11px;border:1.5px solid #cbd5e1;border-radius:8px;outline:none}
+input:focus,textarea:focus{border-color:#00d4ff}
+.error{color:#ef4444;font-size:.85rem;min-height:16px}
+.carrito{position:fixed;top:0;right:-100%;width:370px;max-width:92%;height:100vh;background:white;box-shadow:-10px 0 25px rgba(0,0,0,.15);z-index:20;display:flex;flex-direction:column;transition:.3s}
+.carrito.activo{right:0}
+.carrito-header{display:flex;justify-content:space-between;padding:16px;border-bottom:1px solid #e2e8f0}
+#items-carrito{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:10px}
+.item{display:flex;justify-content:space-between;background:#f0f7ff;padding:8px;border-radius:8px;font-size:.9rem}
+.item button{background:#fee2e2;border:none;padding:4px 8px;border-radius:6px;cursor:pointer}
+.carrito-footer{padding:16px;border-top:1px solid #e2e8f0;display:flex;flex-direction:column;gap:8px}
+footer{background:#082a4d;color:#8ab4e0;text-align:center;padding:26px 5%;margin-top:30px;font-size:.85rem;line-height:1.5}
+@media(max-width:650px){.logo{font-size:.9rem}header{flex-direction:column;align-items:flex-start}.hero h1{font-size:1.5rem}}
